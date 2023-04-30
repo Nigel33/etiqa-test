@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "engines": {
-    "node": "18.16.0"
+    "node": "16.14.2"
   },
   "scripts": {
     "build": "nest build",
@@ -23,7 +23,6 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "nest-cli": "^8.0.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/mongoose": "^9.2.2",
@@ -31,6 +30,7 @@
     "dotenv": "^16.0.3",
     "mongodb": "^5.3.0",
     "mongoose": "^7.1.0",
+    "nest-cli": "^0.0.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
   },
