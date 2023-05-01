@@ -2,6 +2,9 @@ import { NestFactory } from '@nestjs/core';
 import { ExpressAdapter } from '@nestjs/platform-express';
 import { AppModule } from './App/app.module';
 import * as cors from 'cors';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 async function bootstrap() {
   const express = require('express');
@@ -15,9 +18,6 @@ async function bootstrap() {
     credentials: true, 
   }));
 
-  await app.listen(process.env.PORT || 3000, () => {
-    const port = app.get('ConfigService').get('PORT') || 3000;
-    console.log(`Application is running on: http://localhost:${port}`);
-  });
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
