@@ -8,6 +8,7 @@ import { User, UserSchema } from 'src/Users/user.schema';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
+console.log(process, process.env.MONGODB_URI);
 
 @Module({
   imports: [
